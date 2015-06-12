@@ -45,7 +45,7 @@ DS.JsonApiAdapter = DS.RESTAdapter.extend({
 
     var url = [];
     var host = get(this, 'host');
-    var prefix = this.urlPrefix();
+    var prefix = get(this, 'namespace');
     var param = /\{(.*?)\}/g;
 
     if (id) {
